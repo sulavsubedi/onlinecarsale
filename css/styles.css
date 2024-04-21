@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    height: 300px;
+}
+
+.headerVideo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the video covers the full area of the header, may cut off some parts of the video */
+    z-index: -1; /* Ensures the video stays behind the text and logo */
+}
+
+.header-content {
+    position: relative;
+    z-index: 10; /* Ensures content is above the video */
+    padding: 20px;
+    text-align: center; /* Center the text and logo if desired */
+}
+
+.logo {
+    width: 100px;
+    margin-top: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    align-items: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+    vertical-align: middle; 
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.featured-cars {
+    text-align: center;
+    padding: 20px;
+}
+
+.featured-image {
+    width: 30%;
+    margin: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #333;
+    color: white;
+}
+
+nav ul li a.current {
+    color: #4CAF50; /* Change the color to indicate the current page */
+    font-weight: bold;
+}
+
+.search-form input[type="text"] {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+    outline: none;
+    width: 150px; /* Adjust width as needed */
+}
+
+.search-form button {
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-left: -5px; /* Align button with input */
+    background: #ddd;
+    color: black;
+    border: none;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+.search-form button:hover {
+    background-color: #ccc;
+}
+
+.header-content h1, .header-content nav {
+    background: rgba(0, 0, 0, 0.5); /* Adding a semi-transparent background to the text */
+    display: inline-block; /* Adjust layout to fit content */
+    padding: 10px 20px; /* Padding for better spacing */
+}
