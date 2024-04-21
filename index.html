@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Car Sale</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/scripts.js"></script>
+
+</head>
+<body>
+    <header>
+        <video autoplay muted loop id="headerVideo">
+            <source src="videos/car-video.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
+        <div class="header-content">
+            <img src="images/logo.png" alt="Online Car Sale Logo" class="logo">
+            <h1>Welcome to Online Car Sale</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about-us.html">About Us</a></li>
+                    <li>
+                        <form action="/search" method="GET" class="search-form">
+                            <input type="text" name="search" placeholder="Search cars..." required>
+                            <button type="submit">Search</button>
+                        </form>
+                    </li>
+                    <li><a href="seller-registration.html">Seller Registration</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>    
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="intro">
+            <p>Find your dream car today or become a seller to offer your car to a wide audience!</p>
+        </section>
+        <section class="featured-cars">
+            <h2>Featured Cars</h2>
+            <div class="car-gallery">
+                <img src="images/car1.jpg" alt="Featured Car 1" class="featured-image">
+                <img src="images/car2.jpg" alt="Featured Car 2" class="featured-image">
+                <img src="images/car3.jpg" alt="Featured Car 3" class="featured-image">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 Online Car Sale, Inc. All rights reserved.</p>
+    </footer>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
